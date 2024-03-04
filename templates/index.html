@@ -1,0 +1,24 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3schools31.css">
+        <link rel="stylesheet" href="{% static 'style.css' %}" > 
+    </head>
+    <body>
+        <div class="w3-row w3-white" style="max-width: 1000px;">
+            <div class="w3-col" id="main" style="max-width: 1000px;">
+                <div style="border-radius: 5px; background-color: #f2f2f2; padding: 40px;">
+                    <form method="post" class="test" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ arac }}
+                        <button type="submit" class="ws-btn w3-block w3-margin-top w3-padding-16">Sür</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://www.w3schools.com/lib/w3schools_footer.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

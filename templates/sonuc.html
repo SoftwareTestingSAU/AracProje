@@ -1,0 +1,42 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3schools31.css">
+		<link rel="stylesheet" href="{% static 'style.css' %}">
+	</head>
+	<body>		
+		<div class="w3-row w3-white" style="max-width:1000px;">
+			<div class="w3-col" id="main" style="max-width:1000px;"> 
+				<div style="border-radius:5px;background-color:#f2f2f2;padding:40px;">
+					<form class="test">
+					    <label for="depo">Depo</label>
+					    <input id="depo" name="depo" type="text" value="{{ depo }} litre" >
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="w3-row w3-white" style="max-width:1000px;">
+			<div class="w3-col" id="main" style="max-width:1000px;"> 
+				<div style="border-radius:5px;background-color:#f2f2f2;padding:40px;">
+					<form class="test">
+					    <label for="menzil">Menzil</label>
+					    <input id="menzil" name="menzil" type="text" value="{{ menzil }} km" >
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="w3-row w3-white" style="max-width:1000px;">
+			<div class="w3-col" id="main" style="max-width:1000px;"> 
+				<div style="border-radius:5px;background-color:#f2f2f2;padding:40px;">
+					<form class="test">
+					    <label for="yol">Gidilen Yol</label>
+					    <input id="yol" name="yol" type="text" value="{{ yol }} km" >
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="https://www.w3schools.com/lib/w3schools_footer.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
